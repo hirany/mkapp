@@ -48,7 +48,9 @@ import (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "app name"
+	app.Name = "`
+	inCode += cliName
+	inCode += `"
 	app.Usage = "how to use"
 	app.Action = func(c *cli.Context) {
 		run(c.Args())
